@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+*.tmp
+*.bak
+*.log
+logs
+*.map
+cjs
+esm/*
+!esm/package.json
+dist
+.cache
