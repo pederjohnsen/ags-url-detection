@@ -1,0 +1,14 @@
+{
+	"extends": "@sindresorhus/tsconfig",
+	"compilerOptions": {
+		"outDir": "cjs",
+		"lib": [
+			"dom",
+			"es2019"
+		],
+		"rootDir": "."
+	},
+	"include": [
+		"source", "index.ts", "globals.d.ts", "collector.ts"
+	]
+}
