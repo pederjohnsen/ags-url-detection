@@ -56,19 +56,43 @@ collect.set('isGamesRecentPanelRatings', [
 	'https://www.adventuregamestudio.co.uk/site/games/recentpanelratings',
 ]);
 
-export const isGamesUnrated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url) === 'site/games/unrated');
+export const isGamesUnrated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url).startsWith('site/games/unrated'));
 collect.set('isGamesUnrated', [
 	'https://www.adventuregamestudio.co.uk/site/games/unrated',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/name',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/name/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/author',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/author/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/date',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/date/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/rating',
+	'https://www.adventuregamestudio.co.uk/site/games/unrated/rating/desc',
 ]);
 
-export const isGamesNotVeryRated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url) === 'site/games/notveryrated');
+export const isGamesNotVeryRated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url).startsWith('site/games/notveryrated'));
 collect.set('isGamesNotVeryRated', [
 	'https://www.adventuregamestudio.co.uk/site/games/notveryrated',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/name',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/name/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/author',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/author/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/date',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/date/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/rating',
+	'https://www.adventuregamestudio.co.uk/site/games/notveryrated/rating/desc',
 ]);
 
-export const isGamesYouRated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url) === 'site/games/yourated');
+export const isGamesYouRated = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url).startsWith('site/games/yourated'));
 collect.set('isGamesYouRated', [
 	'https://www.adventuregamestudio.co.uk/site/games/yourated',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/name',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/name/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/author',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/author/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/date',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/date/desc',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/rating',
+	'https://www.adventuregamestudio.co.uk/site/games/yourated/rating/desc',
 ]);
 
 export const isGamesAdd = (url: URL | HTMLAnchorElement | Location = location): boolean => Boolean(getCleanPathname(url) === 'site/games/add');
