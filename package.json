@@ -1,6 +1,6 @@
 {
 	"name": "ags-url-detection",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"description": "Which AGS website page are you on? Is it a game? Is it a wiki entry? Perfect for your WebExtension or userscript.",
 	"keywords": [
 		"ags",
