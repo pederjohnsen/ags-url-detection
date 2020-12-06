@@ -148,7 +148,7 @@ const getUsername = () => {
 /** Drop leading and trailing slashes */
 const getCleanPathname = (url: URL | HTMLAnchorElement | Location = location): string => url.pathname.slice(1, url.pathname.endsWith('/') ? -1 : undefined);
 
-export interface RepositoryInfo {
+export interface GameInfo {
 	owner: string;
 	name: string;
 
@@ -160,7 +160,7 @@ export interface RepositoryInfo {
 	path: string;
 }
 
-const getGame = (url: URL | HTMLAnchorElement | string | Location = location): RepositoryInfo | undefined => {
+const getGame = (url: URL | HTMLAnchorElement | string | Location = location): GameInfo | undefined => {
 	if (typeof url === 'string') {
 		url = new URL(url, location.origin);
 	}
